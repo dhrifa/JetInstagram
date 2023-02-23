@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.vectorResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
@@ -28,7 +29,7 @@ import com.vipulasri.jetinstagram.R.drawable
 import com.vipulasri.jetinstagram.model.Post
 import com.vipulasri.jetinstagram.ui.components.*
 
-@ExperimentalFoundationApi
+@ExperimentalFoundationApi //what is it?
 @Composable
 fun PostView(
   post: Post,
@@ -183,3 +184,13 @@ private fun Long.getTimeElapsedText(): String {
   )
     .toString()
 }
+
+
+//@Preview
+//@Composable
+//fun PostFooterTextSectionPreview(
+//  post: Post,
+//  onLikeToggle: (Post) -> Unit
+//){
+//  PostFooterTextSection(post = post)
+//}

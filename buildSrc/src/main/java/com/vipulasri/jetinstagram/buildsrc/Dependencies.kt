@@ -45,6 +45,9 @@ object Libs {
       const val material = "androidx.compose.material:material:${version}"
       const val animation = "androidx.compose.animation:animation:${version}"
       const val activity = "androidx.activity:activity-compose:${activityComposeVersion}"
+
+      const val materiel3 = "androidx.compose.material3:material3"
+      const val materialIcon = "androidx.compose.material:material-icons-extended"
     }
 
     object Test {
