@@ -22,6 +22,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
 import com.vipulasri.jetinstagram.R
+import com.vipulasri.jetinstagram.model.Post
 import com.vipulasri.jetinstagram.model.currentUser
 import com.vipulasri.jetinstagram.ui.HomeSection.Add
 import com.vipulasri.jetinstagram.ui.HomeSection.Favorite
@@ -31,6 +32,7 @@ import com.vipulasri.jetinstagram.ui.HomeSection.Reels
 import com.vipulasri.jetinstagram.ui.components.bottomBarHeight
 import com.vipulasri.jetinstagram.ui.components.icon
 import com.vipulasri.jetinstagram.ui.home.Home
+import com.vipulasri.jetinstagram.ui.post.Post
 import com.vipulasri.jetinstagram.ui.reels.Reels
 
 @ExperimentalFoundationApi
@@ -57,7 +59,7 @@ fun MainScreen() {
         when (section) {
             Home -> Home()
             Reels -> Reels()
-            Add -> Content(title = "Add Post options")
+            Add -> Post()
             Favorite -> Content(title = "Favorite")
             Profile -> Content(title = "Profile")
         }
